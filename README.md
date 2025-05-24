@@ -1,9 +1,27 @@
-Anish Sathyanarayanan - Portfolio Readme
-This repository hosts the code for my personal portfolio, presented as a unique terminal-based website. It's designed to showcase my skills, interests, and provide ways to get in touch.
-💻 The Terminal Interface
-My portfolio website offers a unique, interactive experience through a terminal-based interface. This design reflects my enthusiasm for the command line and provides a distinctive way to explore my profile.
+\# 🧑‍💻 Anish Sathyanarayanan – Portfolio
 
-How to Interact:
+Welcome to the codebase for my \*\*personal portfolio\*\*, crafted as a \*\*terminal-based interactive website\*\*. This project reflects my passion for clean interfaces, the command line, and delivering a distinctive developer experience.
 
-Upon visiting the website, you'll be greeted with a terminal prompt. To navigate and learn more about me, you can use a set of commands. To get started and see the available commands, simply type help and press Enter.
-Built with ❤️ by Anish Sathyanarayanan
+\---
+
+\## 💻 Terminal Interface
+
+My portfolio is not a typical webpage — it’s a \*\*fully interactive terminal UI\*\*! It mimics the command-line environment, offering a unique way to navigate and explore who I am.
+
+This design choice mirrors my enthusiasm for minimal, keyboard-driven interfaces and sets my portfolio apart.
+
+\---
+
+\## 🚀 How to Interact
+
+Upon visiting the website, you'll be welcomed with a terminal prompt.
+
+To get started, type:
+
+\`\`\`bash
+
+help
+
+This command will list all available options and ways to interact with the portfolio. Feel free to explore, run commands, and get to know me through the terminal.
+
+🧠 Built with ❤️ by Anish Sathyanarayanan
