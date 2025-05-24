@@ -1,0 +1,149 @@
+/* Terminal styling */
+.type {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.type::before {
+  content: '>';
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+#terminal-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  flex: 1;
+  caret-color: var(--accent-color);
+}
+
+/* Command output styling */
+.command-output {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 2px solid var(--accent-color);
+}
+
+.error {
+  color: var(--alert-color);
+}
+
+.success {
+  color: var(--success-color);
+}
+
+/* Command history styling */
+.command-history {
+  margin-bottom: 15px;
+}
+
+.command-history-item {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.command-history-item::before {
+  content: '>';
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background-color: var(--accent-color);
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+/* Terminal sections */
+.about-section,
+.projects-section,
+.skills-section,
+.contact-section {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: var(--highlight-color);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.section-content {
+  padding-left: 15px;
+}
+
+/* File browser styling */
+.file {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.file-name {
+  margin-left: 10px;
+}
+
+.directory {
+  color: var(--accent-color);
+}
+
+.executable {
+  color: var(--success-color);
+}
+
+.text-file {
+  color: var(--text-color);
+}
+
+/* Matrix Digital Rain Effect */
+.matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.matrix-column {
+  position: absolute;
+  top: -100px;
+  width: 1px;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0,255,200,0), rgba(0,255,200,0.5));
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
